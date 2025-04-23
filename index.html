@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayakumar Teerth Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>AI&ML Developer</p>
+                <h1>Hi, I'm<br><span>Jayakumar</span> Teerth </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------About Section----------------  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hi, I'm Jayakumar Kallappa Teerth from Jamkhandi. I'm currently pursuing a Bachelor of Engineering in Artificial Intelligence at KLECET. I'm fascinated by the potential of AI and ML to transform industries and improve lives. I'm excited to explore the vast possibilities of AI technology and contribute to innovative projects. With a strong foundation in AI and ML, I aim to make a meaningful impact in this field.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages:</span><br>Python, C</li>
+                            <li><span>AI Technologies:</span><br>Machine Learning, Deep Learning</li>
+                            <li><span>Web Development:</span><br>HTML, CSS, PHP</li>
+                            <li><span>Database:</span><br>MySQL</li>
+                            <li><span>Operating Systems:</span><br> Windows, Linux</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Heart Disease Prediction:</span><br>Tech Stack: Python,Machine Learning models</li>
+                            <li><span>Stock Market Predction App:</span><br>Tech Stack: Python,Deep Learning models ,Streamlit</li>
+                            <li><span>Smart Attendance:</span><br>Tech Stack: Python,CNN model</li>
+                            <li><span>Conversion of Sign Gesture into text and voice and vice-versa</span>:</span><br>Tech Stack: Python,Deep Learning models</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2026</span><br>BE in AI&DS from KLECET, Chikodi</li>
+                            <li><span>2022</span><br>Class 12 from Government Pu College, Hunnur</li>
+                            <li><span>2020:</span><br>SSLC from Govt P.B.High School, Jamkhandi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------Projects Section----------------  -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title1">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/heart.jpeg" alt="heart Disease">
+                    <div class="layer">
+                        <h3>Heart Disease Predction</h3>
+                        <p>Heart disease prediction uses machine learning algorithms to analyze patient data and predict the likelihood of developing heart disease.</p>
+                        <a href="https://colab.research.google.com/drive/1_n96mmGuHGzP5Oz0C35rj3Bfdc7O7ZPr?usp=sharing" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/stock.jpeg" alt="stock">
+                    <div class="layer">
+                        <h3>Stock Market Predction App</h3>
+                        <p>A stock market prediction is an attempt to forecast the future value of an individual stock, a particular sector or the market, or the market as a whole.</p>
+                        
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/smart.jpeg" alt="smart attendance">
+                    <div class="layer">
+                        <h3>Smart Attendance</h3>
+                        <p>Smart attendance systems using face authentication leverage facial recognition technology to automate and streamline the process of tracking attendance, offering several advantages over traditional methods. .</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button id="showMoreBtn">Show more</button>
+
+                <div id="moreContent">
+                    <div class="work">
+                        <img src="images/sign.png" alt="Sign Gesture">
+                        <div class="layer">
+                            <h3>Sign Language conversion</h3>
+                            <p>Sign language recognition systems translate hand gestures into text and spoken language using technologies like computer vision and natural language processing.</p>
+                            <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <button id="showLessBtn">Show less</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------Contact Section----------------  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> jayakumarteerth@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 6362863459</p>
+                    <div class="sm-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/jayakumar_teerth?igsh=bXI2ejk3MzRidGRu"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/jayakumar-teerth-a6775a268"><i
+                                class="fa-brands fa-linkedin"></i></i></a>
+                        <a href="https://github.com/jkteerth"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="images/Jkteerthresume.pdf" download class="Btn">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Meassage" required></textarea>
+                        <button type="submit" class="Btn Btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © JkTeerth. Made with <i class="fa-solid fa-heart"></i> by JkTeerth</p>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+
+</html>
